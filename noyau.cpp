@@ -26,7 +26,7 @@ RenderWindow fenetrePrincipal;
 
 noyau::noyau()
 {
-    std::cout<<"Eveil du Noyau"<<std::endl;
+    cout<<"Eveil du Noyau"<<endl;
     fenetrePrincipal.Create(VideoMode(800, 600, 32), "Omega 0.1");
 }
 
@@ -40,7 +40,7 @@ void noyau::run()
 
     mapHandler *instMapHandler = mapHandler::getInstance();
 
-    instMusicHandler->getMusic("SkinnyLove")->Play();
+    //instMusicHandler->getMusic("SkinnyLove")->Play();
 
     Sprite spriteIn;
     spriteIn.SetImage(*instSpriteHandler->getImage("scientifiqueFront"));
@@ -49,7 +49,7 @@ void noyau::run()
 
     Sound soundActivate;
     soundActivate.SetBuffer(*instSoundHandler->getSound("activated"));
-    soundActivate.Play();
+    //soundActivate.Play();
 
     animation firstAnim = animation("coucou");
     //firstAnim.afficher(fenetrePrincipal);
@@ -85,7 +85,11 @@ void noyau::run()
         // Rotate the sprite
         //if (fenetrePrincipal.GetInput().IsKeyDown(sf::Key::Add))      Sprite.Rotate(- 100 * ElapsedTime);
 
-        if (fenetrePrincipal.GetInput().IsKeyDown(sf::Key::R)) spriteIn.Rotate(+ 100 * ElapsedTime);
+        if (fenetrePrincipal.GetInput().IsKeyDown(sf::Key::R))
+            spriteIn.Rotate(+ 100 * ElapsedTime);
+        if (fenetrePrincipal.GetInput().IsKeyDown(sf::Key::T))
+            cout<<"Phase : "<<timerC.GetElapsedTime()<<endl;
+
 
         // Clear screen
         fenetrePrincipal.Clear();

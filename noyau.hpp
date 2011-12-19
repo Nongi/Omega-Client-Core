@@ -5,13 +5,14 @@
 #include <iostream>
 
 using namespace std;
+using namespace sf;
 
 class noyau
 {
     private :
         static noyau *singleton;
-
         noyau ();
+        sf::Clock timerC;
 
 
     public:
