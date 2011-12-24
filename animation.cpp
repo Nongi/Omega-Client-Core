@@ -85,6 +85,7 @@ void animation::afficher(RenderWindow &fenAffichage)
     fenAffichage.Draw(spriteCourant);
 }
 
+//va changer le sprite courant qui sera afficher
 void animation::updateSprite(){
     updateSpriteNumber();
 
@@ -94,6 +95,8 @@ void animation::updateSprite(){
     spriteCourant.SetScale(2, 2);
 }
 
+
+//en fonction du temps qui est passé identifie le sprite à afficher en utilisant la vitesse et le nombre d'image
 void animation::updateSpriteNumber(){
     float time=timerC.GetElapsedTime();
 
