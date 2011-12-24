@@ -10,10 +10,19 @@ using namespace sf;
 class animation
 {
     private:
-        int timer,vitesse,coordX,coordY;
-        vector<Sprite> listeSpritesAnim;
-        int spriteCourant;
+        int coordX,coordY;
+        float vitesse;
+
+        std::vector<string> listeNameSpritesAnim;
+        Sprite spriteCourant;
+
+        int idSpriteCourant;
         bool loop;
+        sf::Clock timerC;
+
+        void updateSprite();
+        void updateSpriteNumber();
+
 
     public:
 
@@ -28,15 +37,12 @@ class animation
 
         //Ensemble des fonctions permettant de jouer une animation
         void play();
-        void play(int coordXIn, int coordYIn);
-        //avec un temp spécifique
-        void play(int timeIn);
-        void play(int coordXIn, int coordYIn, int timeIn);
         void pause();
         void stop();
+
 
         void setLoopEnable();
         void setLoopDisable();
 
-        int getTimer();
+        float getTimer();
 };

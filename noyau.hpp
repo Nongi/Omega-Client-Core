@@ -27,5 +27,7 @@ class noyau
         }
 
         void run();
+
+        float getTimerNoyau();
 };
 

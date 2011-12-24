@@ -18,29 +18,22 @@ animation::animation()
 
 animation::animation(string idAnim)
 {
+    spriteHandler *instSpriteHandler = spriteHandler::getInstance();
 
     setLoopEnable();
-
     setPosition(50,50);
-    vector<string> listeNameSpritesAnim;
 
-    listeNameSpritesAnim.push_back("scientifiqueFront");
+    //listeNameSpritesAnim.push_back("scientifiqueFront");
     listeNameSpritesAnim.push_back("scientifiqueFront1");
     listeNameSpritesAnim.push_back("scientifiqueFront2");
 
-    spriteCourant=0;
+    //listeNameSpritesAnim.push_back(spriteTemp.SetImage(*instSpriteHandler->getImage("scientifiqueFront2")));
+    //listeNameSpritesAnim.push_back(spriteTemp.SetImage(*instSpriteHandler->getImage("scientifiqueFront3")));
 
-    spriteHandler *instSpriteHandler = spriteHandler::getInstance();
+    idSpriteCourant=0;
+    vitesse=0.30;
 
-   /* for (vector<string> listeNameSpritesAnim: myString)
-    {
-        Sprite spriteAnim;
-        spriteAnim.SetImage(*instSpriteHandler->getImage(myString));
-        spriteAnim.SetPosition(coordX, coordY);
-        spriteAnim.SetScale(2, 2);
-    }*/
-
-    cout<<"Création de l'animation "+idAnim<<endl;
+    cout<<"Creation de l'animation "+idAnim<<endl;
 }
 
 void animation::setModificationPos(int coordXIn,int coordYIn)
@@ -60,20 +53,6 @@ void animation::play()
 
 }
 
-void animation::play(int coordXIn, int coordYIn)
-{
-
-}
-
-void animation::play(int timeIn)
-{
-
-}
-
-void animation::play(int coordXIn, int coordYIn, int timeIn)
-{
-
-}
 
 void animation::pause()
 {
@@ -95,12 +74,36 @@ void animation::setLoopDisable()
     loop=false;
 }
 
-int animation::getTimer()
+float animation::getTimer()
 {
-    return timer;
+    return timerC.GetElapsedTime();
 }
 
 void animation::afficher(RenderWindow &fenAffichage)
 {
-    fenAffichage.Draw(listeSpritesAnim.at(spriteCourant));
+    updateSprite();
+    fenAffichage.Draw(spriteCourant);
+}
+
+void animation::updateSprite(){
+    updateSpriteNumber();
+
+    spriteHandler *instSpriteHandler = spriteHandler::getInstance();
+    spriteCourant.SetImage(*instSpriteHandler->getImage(listeNameSpritesAnim[idSpriteCourant]));
+    spriteCourant.SetPosition(coordX,coordY);
+    spriteCourant.SetScale(2, 2);
+}
+
+void animation::updateSpriteNumber(){
+    float time=timerC.GetElapsedTime();
+
+    if(time<vitesse*listeNameSpritesAnim.size())
+    {
+        idSpriteCourant=(time/vitesse);
+    }
+    else{
+        timerC.Reset();
+    }
+
+    cout<<"timer :"<<time<<" et frame :"<<idSpriteCourant<<endl;
 }

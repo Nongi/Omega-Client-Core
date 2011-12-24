@@ -96,12 +96,19 @@ void noyau::run()
 
         // Display sprite in our window
         instMapHandler->afficherAll(fenetrePrincipal);
+
+        firstAnim.afficher(fenetrePrincipal);
         fenetrePrincipal.Draw(spriteIn);
 
         // Display window contents on screen
         fenetrePrincipal.Display();
     }
+
+
 }
 
-
+float noyau::getTimerNoyau(){
+    float time = timerC.GetElapsedTime();
+    return time;
+}
 
