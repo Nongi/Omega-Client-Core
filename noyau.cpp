@@ -94,10 +94,20 @@ void noyau::run()
         // Clear screen
         fenetrePrincipal.Clear();
 
-        // Display sprite in our window
+        // Display sprite of the map in our window
         instMapHandler->afficherAll(fenetrePrincipal);
 
+        //few test on the Animation classe
         firstAnim.afficher(fenetrePrincipal);
+        if(timerC.GetElapsedTime()>=10)
+        {
+            if(timerC.GetElapsedTime()<=20)
+                firstAnim.stop();
+            else
+                firstAnim.play();
+        }
+
+
         fenetrePrincipal.Draw(spriteIn);
 
         // Display window contents on screen

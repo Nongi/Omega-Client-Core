@@ -8,10 +8,10 @@
 		<Cursor position="242" topLine="0" />
 	</File>
 	<File name="animation.cpp" open="1" top="1" tabpos="3">
-		<Cursor position="2096" topLine="85" />
+		<Cursor position="2815" topLine="101" />
 	</File>
 	<File name="animation.hpp" open="1" top="0" tabpos="4">
-		<Cursor position="126" topLine="5" />
+		<Cursor position="751" topLine="21" />
 	</File>
 	<File name="bddInternalHandler.cpp" open="0" top="0" tabpos="1">
 		<Cursor position="1509" topLine="35" />
@@ -47,10 +47,10 @@
 		<Cursor position="482" topLine="5" />
 	</File>
 	<File name="noyau.cpp" open="1" top="0" tabpos="1">
-		<Cursor position="1835" topLine="53" />
+		<Cursor position="3424" topLine="91" />
 	</File>
 	<File name="noyau.hpp" open="1" top="0" tabpos="2">
-		<Cursor position="212" topLine="0" />
+		<Cursor position="348" topLine="8" />
 	</File>
 	<File name="soundHandler.cpp" open="0" top="0" tabpos="10">
 		<Cursor position="1463" topLine="56" />

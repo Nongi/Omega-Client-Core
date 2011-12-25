@@ -199,3 +199,188 @@
 	<SFML/Graphics.hpp>
 	<iostream>
 
+1313769369 source:c:\users\nongi\desktop\prog\omega_0.1\gestionnairedb.cpp
+	"GestionnaireDB.h"
+	"sqlite3.h"
+	<iostream>
+	<string>
+	<cstring>
+
+1313769260 c:\users\nongi\desktop\prog\omega_0.1\gestionnairedb.h
+	<string>
+	<vector>
+	"sqlite3.h"
+
+1296509512 c:\users\nongi\desktop\prog\omega_0.1\sqlite3.h
+	<stdarg.h>
+
+1313854798 source:c:\users\nongi\desktop\prog\omega_0.1\bddinternalhandler.cpp
+	"bddInternalHandler.hpp"
+	"GestionnaireDB.h"
+	<iostream>
+	<sstream>
+
+1313837010 c:\users\nongi\desktop\prog\omega_0.1\bddinternalhandler.hpp
+	"GestionnaireDB.h"
+	<iostream>
+
+1314101204 source:c:\users\nongi\desktop\prog\omega_0.1\elementmap.cpp
+	"elementMap.hpp"
+	"spriteHandler.hpp"
+	"bddInternalHandler.hpp"
+	<iostream>
+	<stdlib.h>
+	<time.h>
+
+1314101204 c:\users\nongi\desktop\prog\omega_0.1\elementmap.hpp
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+	<iostream>
+	<vector>
+
+1313771332 c:\users\nongi\desktop\prog\omega_0.1\spritehandler.hpp
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+	<vector>
+	<string>
+	<iostream>
+
+1310572042 source:c:\users\nongi\desktop\prog\omega_0.1\main.cpp
+	<iostream>
+	"noyau.hpp"
+
+1324338301 c:\users\nongi\desktop\prog\omega_0.1\noyau.hpp
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+	<iostream>
+
+1313766190 source:c:\users\nongi\desktop\prog\omega_0.1\maphandler.cpp
+	"mapHandler.hpp"
+	"spriteHandler.hpp"
+
+1312389434 c:\users\nongi\desktop\prog\omega_0.1\maphandler.hpp
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+	"mapSyst.hpp"
+	<iostream>
+
+1312636667 c:\users\nongi\desktop\prog\omega_0.1\mapsyst.hpp
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+	"elementMap.hpp"
+	<iostream>
+	<vector>
+
+1314051668 source:c:\users\nongi\desktop\prog\omega_0.1\mapsyst.cpp
+	"mapSyst.hpp"
+	"bddInternalHandler.hpp"
+	<vector>
+	<iostream>
+
+1313771978 source:c:\users\nongi\desktop\prog\omega_0.1\musichandler.cpp
+	"musicHandler.hpp"
+	"bddInternalHandler.hpp"
+	<SFML/System.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Graphics.hpp>
+	<iostream>
+
+1313771731 c:\users\nongi\desktop\prog\omega_0.1\musichandler.hpp
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<iostream>
+
+1324781652 source:c:\users\nongi\desktop\prog\omega_0.1\noyau.cpp
+	"noyau.hpp"
+	"spriteHandler.hpp"
+	"soundHandler.hpp"
+	"musicHandler.hpp"
+	"bddInternalHandler.hpp"
+	"mapHandler.hpp"
+	"animation.hpp"
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<iostream>
+
+1313771647 c:\users\nongi\desktop\prog\omega_0.1\soundhandler.hpp
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<vector>
+	<string>
+	<iostream>
+
+1324781637 c:\users\nongi\desktop\prog\omega_0.1\animation.hpp
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+	<iostream>
+
+1313771978 source:c:\users\nongi\desktop\prog\omega_0.1\soundhandler.cpp
+	"soundHandler.hpp"
+	"bddInternalHandler.hpp"
+	<SFML/System.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Graphics.hpp>
+	<iostream>
+
+1314111542 source:c:\users\nongi\desktop\prog\omega_0.1\spritehandler.cpp
+	"spriteHandler.hpp"
+	"bddInternalHandler.hpp"
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+	<iostream>
+
+1296509512 source:c:\users\nongi\desktop\prog\omega_0.1\sqlite3.c
+	"config.h"
+	<stdint.h>
+	<inttypes.h>
+	<tcl.h>
+	<stdarg.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<stddef.h>
+	<windows.h>
+	<os2safe.h>
+	<os2.h>
+	<uconv.h>
+	<ctype.h>
+	<time.h>
+	<pthread.h>
+	<math.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<fcntl.h>
+	<unistd.h>
+	<sys/time.h>
+	<errno.h>
+	<sys/mman.h>
+	<sys/ioctl.h>
+	<semaphore.h>
+	<limits.h>
+	<sys/file.h>
+	<sys/param.h>
+	<sys/mount.h>
+	<dlfcn.h>
+	<winbase.h>
+	<sys/cygwin.h>
+	"sqlite3rtree.h"
+	<unicode/utypes.h>
+	<unicode/uregex.h>
+	<unicode/ustring.h>
+	<unicode/ucol.h>
+	<unicode/ubrk.h>
+	<unicode/utf16.h>
+
+1324781804 source:c:\users\nongi\desktop\prog\omega_0.1\animation.cpp
+	"animation.hpp"
+	"spriteHandler.hpp"
+	"bddInternalHandler.hpp"
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<iostream>
+

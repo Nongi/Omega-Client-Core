@@ -4,8 +4,6 @@
 
 #include <iostream>
 
-using namespace std;
-using namespace sf;
 
 class animation
 {
@@ -13,11 +11,12 @@ class animation
         int coordX,coordY;
         float vitesse;
 
-        std::vector<string> listeNameSpritesAnim;
-        Sprite spriteCourant;
+        std::vector<std::string> listeNameSpritesAnim;
+        std::string spriteBase;
+        sf::Sprite spriteCourant;
 
         int idSpriteCourant;
-        bool loop;
+        bool loop,run;
         sf::Clock timerC;
 
         void updateSprite();
@@ -27,19 +26,19 @@ class animation
     public:
 
         animation();
-        animation(string idAnim);
+        animation(std::vector<std::string> listeSpriteIn,float vitIn);
+        animation(std::string idAnim);
 
-        void setModificationPos(int coordXIn,int coordYIn);
+        void move(int coordXIn,int coordYIn);
         void setPosition(int coordXIn,int coordYIn);
+        void setScale(float xIn,float yIn);
 
 
-        void afficher(RenderWindow &fenAffichage);
+        void afficher(sf::RenderWindow &fenAffichage);
 
         //Ensemble des fonctions permettant de jouer une animation
         void play();
-        void pause();
         void stop();
-
 
         void setLoopEnable();
         void setLoopDisable();
