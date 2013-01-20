@@ -2,8 +2,22 @@
 #include "sqlite3.h"
 
 #include <iostream>
+#include <fstream>
 #include <string>
 #include <cstring>
+#include <time.h>
+
+/*
+    ofstream fluxOut("Log\\logBddInternal.txt", ios::app);
+    if(fluxOut)
+    {
+        time (&timeDate);
+        string timeDateString = ctime(&timeDate);
+        timeDateString.resize(timeDateString.size()-1);
+        fluxOut<<"["<<timeDateString<<"] => openning : internal.db"<<endl;
+    }
+*/
+
 
 GestionnaireDB::GestionnaireDB()
 {
@@ -21,7 +35,17 @@ GestionnaireDB::GestionnaireDB(string filenameIn)
     filename = new char [filenameIn.size()+1];
     strcpy (filename, filenameIn.c_str());
     database = NULL;
-    open(filename);
+    if(open(filename))
+    {
+        ofstream fluxOut("Log\\logGestionnaireDBB.txt", ios::app);
+        if(fluxOut)
+        {
+            time (&timeDate);
+            string timeDateString = ctime(&timeDate);
+            timeDateString.resize(timeDateString.size()-1);
+            fluxOut<<"["<<timeDateString<<"] => openning : "<<filenameIn<<endl;
+        }
+    }
 }
 
 GestionnaireDB::~GestionnaireDB()
@@ -44,6 +68,15 @@ vector<vector<string> > GestionnaireDB::query(string request)
 
     char * query;
 
+    /*
+    ofstream fluxOut("Log\\logGestionnaireDBB.txt", ios::app);
+    if(fluxOut)
+    {
+            time (&timeDate);
+            string timeDateString = ctime(&timeDate);
+            timeDateString.resize(timeDateString.size()-1);
+            fluxOut<<"["<<timeDateString<<"] => request : "<<request<<endl;
+    }*/
 
     query = new char [request.size()+1];
     strcpy (query, request.c_str());

@@ -23,6 +23,7 @@ class elementMap
         elementMap();
         elementMap(string idElement);
         elementMap(string idElement,int coordXIn,int coordYIn);
+        elementMap(int idElement,int coordXIn,int coordYIn);
         ~elementMap();
 
         void affiche(RenderWindow &fenAffichage);

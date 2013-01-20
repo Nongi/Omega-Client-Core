@@ -1,31 +1,43 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug" />
-	<File name="GestionnaireDB.cpp" open="0" top="0" tabpos="12">
-		<Cursor position="1942" topLine="48" />
+	<File name="GestionnaireDB.cpp" open="0" top="0" tabpos="7">
+		<Cursor position="186" topLine="0" />
 	</File>
-	<File name="GestionnaireDB.h" open="0" top="0" tabpos="7">
-		<Cursor position="242" topLine="0" />
+	<File name="GestionnaireDB.h" open="0" top="0" tabpos="9">
+		<Cursor position="115" topLine="0" />
 	</File>
-	<File name="animation.cpp" open="1" top="1" tabpos="3">
-		<Cursor position="2815" topLine="101" />
+	<File name="animation.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="942" topLine="32" />
 	</File>
-	<File name="animation.hpp" open="1" top="0" tabpos="4">
-		<Cursor position="751" topLine="21" />
+	<File name="animation.hpp" open="0" top="0" tabpos="4">
+		<Cursor position="123" topLine="0" />
 	</File>
 	<File name="bddInternalHandler.cpp" open="0" top="0" tabpos="1">
-		<Cursor position="1509" topLine="35" />
+		<Cursor position="12485" topLine="460" />
 	</File>
-	<File name="bddInternalHandler.hpp" open="0" top="0" tabpos="2">
-		<Cursor position="74" topLine="3" />
+	<File name="bddInternalHandler.hpp" open="0" top="0" tabpos="3">
+		<Cursor position="152" topLine="36" />
 	</File>
-	<File name="elementMap.cpp" open="0" top="0" tabpos="8">
-		<Cursor position="979" topLine="36" />
+	<File name="board.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="1361" topLine="39" />
 	</File>
-	<File name="elementMap.hpp" open="0" top="0" tabpos="5">
-		<Cursor position="255" topLine="5" />
+	<File name="board.hpp" open="0" top="0" tabpos="2">
+		<Cursor position="720" topLine="8" />
 	</File>
-	<File name="main.cpp" open="1" top="0" tabpos="5">
+	<File name="boardForm.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="19" topLine="0" />
+	</File>
+	<File name="boardForm.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="131" topLine="0" />
+	</File>
+	<File name="elementMap.cpp" open="0" top="0" tabpos="5">
+		<Cursor position="2280" topLine="59" />
+	</File>
+	<File name="elementMap.hpp" open="0" top="0" tabpos="6">
+		<Cursor position="240" topLine="8" />
+	</File>
+	<File name="main.cpp" open="0" top="0" tabpos="5">
 		<Cursor position="157" topLine="0" />
 	</File>
 	<File name="mapHandler.cpp" open="0" top="0" tabpos="7">
@@ -34,23 +46,26 @@
 	<File name="mapHandler.hpp" open="0" top="0" tabpos="3">
 		<Cursor position="281" topLine="8" />
 	</File>
-	<File name="mapSyst.cpp" open="0" top="0" tabpos="3">
-		<Cursor position="646" topLine="24" />
+	<File name="mapSyst.cpp" open="0" top="0" tabpos="7">
+		<Cursor position="1959" topLine="68" />
 	</File>
-	<File name="mapSyst.hpp" open="0" top="0" tabpos="4">
-		<Cursor position="568" topLine="10" />
+	<File name="mapSyst.hpp" open="0" top="0" tabpos="8">
+		<Cursor position="686" topLine="12" />
 	</File>
-	<File name="musicHandler.cpp" open="0" top="0" tabpos="11">
-		<Cursor position="1321" topLine="60" />
+	<File name="musicHandler.cpp" open="0" top="0" tabpos="4">
+		<Cursor position="165" topLine="0" />
 	</File>
 	<File name="musicHandler.hpp" open="0" top="0" tabpos="3">
 		<Cursor position="482" topLine="5" />
 	</File>
-	<File name="noyau.cpp" open="1" top="0" tabpos="1">
-		<Cursor position="3424" topLine="91" />
+	<File name="noyau.cpp" open="0" top="0" tabpos="4">
+		<Cursor position="1917" topLine="60" />
 	</File>
-	<File name="noyau.hpp" open="1" top="0" tabpos="2">
-		<Cursor position="348" topLine="8" />
+	<File name="noyau.hpp" open="0" top="0" tabpos="2">
+		<Cursor position="348" topLine="0" />
+	</File>
+	<File name="pokemon.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="2" topLine="0" />
 	</File>
 	<File name="soundHandler.cpp" open="0" top="0" tabpos="10">
 		<Cursor position="1463" topLine="56" />
@@ -58,13 +73,13 @@
 	<File name="soundHandler.hpp" open="0" top="0" tabpos="5">
 		<Cursor position="229" topLine="6" />
 	</File>
-	<File name="spriteHandler.cpp" open="0" top="0" tabpos="9">
-		<Cursor position="1822" topLine="49" />
+	<File name="spriteHandler.cpp" open="0" top="0" tabpos="5">
+		<Cursor position="6531" topLine="173" />
 	</File>
-	<File name="spriteHandler.hpp" open="0" top="0" tabpos="3">
-		<Cursor position="300" topLine="8" />
+	<File name="spriteHandler.hpp" open="0" top="0" tabpos="6">
+		<Cursor position="155" topLine="9" />
 	</File>
 	<File name="sqlite3.c" open="0" top="0" tabpos="0">
-		<Cursor position="746" topLine="201" />
+		<Cursor position="410984" topLine="123286" />
 	</File>
 </CodeBlocks_layout_file>

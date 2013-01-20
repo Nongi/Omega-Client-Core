@@ -6,6 +6,7 @@
 #include "bddInternalHandler.hpp"
 #include "mapHandler.hpp"
 #include "animation.hpp"
+#include "board.hpp"
 
 
 #include <SFML/System.hpp>
@@ -32,27 +33,45 @@ noyau::noyau()
 
 void noyau::run()
 {
+    //------------------------------------------------------------------------------------------------------
+
+    // Ensemble des gestionnaires de sprites/sons/musiques
     spriteHandler *instSpriteHandler = spriteHandler::getInstance();
     soundHandler *instSoundHandler = soundHandler::getInstance();
     musicHandler *instMusicHandler = musicHandler::getInstance();
 
+    //Instanciation du gestionnaire de la BDD interne
     bddInternalHandler *instBddInternalHandler = bddInternalHandler::getInstance();
 
+    //Gestionnaire des maps
     mapHandler *instMapHandler = mapHandler::getInstance();
 
+    //------------------------------------------------------------------------------------------------------
+
+
+    //Test de musique
     //instMusicHandler->getMusic("SkinnyLove")->Play();
 
+    //Test de son
+    Sound soundActivate;
+    soundActivate.SetBuffer(*instSoundHandler->getSound("activated"));
+    soundActivate.Play();
+
+
+    //------------------------------------------------------------------------------------------------------
+
+
+    /*
+    //Test d'affichage d'un sprite
     Sprite spriteIn;
     spriteIn.SetImage(*instSpriteHandler->getImage("scientifiqueFront"));
     spriteIn.SetPosition(200, 100);
     spriteIn.SetScale(2, 2);
+    */
 
-    Sound soundActivate;
-    soundActivate.SetBuffer(*instSoundHandler->getSound("activated"));
-    //soundActivate.Play();
-
-    animation firstAnim = animation("coucou");
-    //firstAnim.afficher(fenetrePrincipal);
+    animation firstAnim = animation("1");
+    //firstAnim.play();
+    firstAnim.stop();
 
     // Start game loop
     while (fenetrePrincipal.IsOpened())
@@ -77,16 +96,26 @@ void noyau::run()
 
         // Move the sprite
 
-        if (fenetrePrincipal.GetInput().IsKeyDown(sf::Key::Left))  spriteIn.Move(-100 * ElapsedTime, 0);
-        if (fenetrePrincipal.GetInput().IsKeyDown(sf::Key::Right)) spriteIn.Move( 100 * ElapsedTime, 0);
-        if (fenetrePrincipal.GetInput().IsKeyDown(sf::Key::Up))    spriteIn.Move(0, -100 * ElapsedTime);
-        if (fenetrePrincipal.GetInput().IsKeyDown(sf::Key::Down))  spriteIn.Move(0,  100 * ElapsedTime);
+        if (fenetrePrincipal.GetInput().IsKeyDown(sf::Key::Left))
+            firstAnim.move(-100 * ElapsedTime, 0);
+        if (fenetrePrincipal.GetInput().IsKeyDown(sf::Key::Right))
+            firstAnim.move( 100 * ElapsedTime, 0);
+        if (fenetrePrincipal.GetInput().IsKeyDown(sf::Key::Up))
+            firstAnim.move(0, -100 * ElapsedTime);
+        if (fenetrePrincipal.GetInput().IsKeyDown(sf::Key::Down))
+        {
+            firstAnim.move(0,  100 * ElapsedTime);
+            firstAnim.play();
+        }
+
+
 
         // Rotate the sprite
         //if (fenetrePrincipal.GetInput().IsKeyDown(sf::Key::Add))      Sprite.Rotate(- 100 * ElapsedTime);
 
-        if (fenetrePrincipal.GetInput().IsKeyDown(sf::Key::R))
-            spriteIn.Rotate(+ 100 * ElapsedTime);
+        /*if (fenetrePrincipal.GetInput().IsKeyDown(sf::Key::R))
+            firstAnim.Rotate(+ 100 * ElapsedTime);*/
+
         if (fenetrePrincipal.GetInput().IsKeyDown(sf::Key::T))
             cout<<"Phase : "<<timerC.GetElapsedTime()<<endl;
 
@@ -99,6 +128,12 @@ void noyau::run()
 
         //few test on the Animation classe
         firstAnim.afficher(fenetrePrincipal);
+        board titi =  board();
+        titi.init(300,300,330,330,sf::Color(255,255,255),"coucou",30,sf::Color(0,0,0),3,sf::Color(0,0,0));
+        titi.affiche(fenetrePrincipal);
+
+
+        /*
         if(timerC.GetElapsedTime()>=10)
         {
             if(timerC.GetElapsedTime()<=20)
@@ -106,15 +141,30 @@ void noyau::run()
             else
                 firstAnim.play();
         }
+        */
+
+        /*
+
+        */
+
+        /*
+        sf::Shape Line = sf::Shape::Line(30,30,60,60,3,sf::Color(255,255,255));
+        sf::Shape Circle = sf::Shape::Circle(90,90,20,sf::Color(255,255,255),1,sf::Color(0,0,0));
+        sf::Shape Rect = sf::Shape::Rectangle(200,200,220,220,sf::Color(255,255,255));
+        fenetrePrincipal.Draw(Line);
+        fenetrePrincipal.Draw(Circle);
+        fenetrePrincipal.Draw(Rect);
+        */
 
 
-        fenetrePrincipal.Draw(spriteIn);
+        //fenetrePrincipal.Draw(spriteIn);
 
         // Display window contents on screen
         fenetrePrincipal.Display();
+        //fenetrePrincipal.SetView(View);
+
+        firstAnim.stop();
     }
-
-
 }
 
 float noyau::getTimerNoyau(){

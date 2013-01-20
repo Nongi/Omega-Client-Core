@@ -384,3 +384,447 @@
 	<SFML/Audio.hpp>
 	<iostream>
 
+1347862870 source:c:\users\sonate\desktop\code\nongi-omega-client-core-78f291a\gestionnairedb.cpp
+	"GestionnaireDB.h"
+	"sqlite3.h"
+	<iostream>
+	<fstream>
+	<string>
+	<cstring>
+	<time.h>
+
+1344434238 c:\users\sonate\desktop\code\nongi-omega-client-core-78f291a\gestionnairedb.h
+	<string>
+	<vector>
+	"sqlite3.h"
+
+1324746902 c:\users\sonate\desktop\code\nongi-omega-client-core-78f291a\sqlite3.h
+	<stdarg.h>
+
+1343655095 source:c:\users\sonate\desktop\code\nongi-omega-client-core-78f291a\animation.cpp
+	"animation.hpp"
+	"spriteHandler.hpp"
+	"bddInternalHandler.hpp"
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<iostream>
+
+1343642413 c:\users\sonate\desktop\code\nongi-omega-client-core-78f291a\animation.hpp
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+	<iostream>
+
+1349850761 c:\users\sonate\desktop\code\nongi-omega-client-core-78f291a\spritehandler.hpp
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+	<vector>
+	<string>
+	<iostream>
+
+1348465684 c:\users\sonate\desktop\code\nongi-omega-client-core-78f291a\bddinternalhandler.hpp
+	"GestionnaireDB.h"
+	<iostream>
+	<map>
+
+1350647454 source:c:\users\sonate\desktop\code\nongi-omega-client-core-78f291a\bddinternalhandler.cpp
+	"bddInternalHandler.hpp"
+	"GestionnaireDB.h"
+	<iostream>
+	<sstream>
+	<map>
+
+1350650290 source:c:\users\sonate\desktop\code\nongi-omega-client-core-78f291a\elementmap.cpp
+	"elementMap.hpp"
+	"spriteHandler.hpp"
+	"bddInternalHandler.hpp"
+	<iostream>
+	<sstream>
+	<stdlib.h>
+	<time.h>
+
+1349850135 c:\users\sonate\desktop\code\nongi-omega-client-core-78f291a\elementmap.hpp
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+	<iostream>
+	<vector>
+
+1324746902 source:c:\users\sonate\desktop\code\nongi-omega-client-core-78f291a\main.cpp
+	<iostream>
+	"noyau.hpp"
+
+1324746902 c:\users\sonate\desktop\code\nongi-omega-client-core-78f291a\noyau.hpp
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+	<iostream>
+
+1324746902 source:c:\users\sonate\desktop\code\nongi-omega-client-core-78f291a\maphandler.cpp
+	"mapHandler.hpp"
+	"spriteHandler.hpp"
+
+1324746902 c:\users\sonate\desktop\code\nongi-omega-client-core-78f291a\maphandler.hpp
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+	"mapSyst.hpp"
+	<iostream>
+
+1350451850 c:\users\sonate\desktop\code\nongi-omega-client-core-78f291a\mapsyst.hpp
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+	"elementMap.hpp"
+	<iostream>
+	<vector>
+
+1350451855 source:c:\users\sonate\desktop\code\nongi-omega-client-core-78f291a\mapsyst.cpp
+	"mapSyst.hpp"
+	"bddInternalHandler.hpp"
+	<vector>
+	<iostream>
+
+1342269423 source:c:\users\sonate\desktop\code\nongi-omega-client-core-78f291a\musichandler.cpp
+	"musicHandler.hpp"
+	"bddInternalHandler.hpp"
+	<SFML/System.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Graphics.hpp>
+	<iostream>
+
+1324746902 c:\users\sonate\desktop\code\nongi-omega-client-core-78f291a\musichandler.hpp
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<iostream>
+
+1350721237 source:c:\users\sonate\desktop\code\nongi-omega-client-core-78f291a\noyau.cpp
+	"noyau.hpp"
+	"spriteHandler.hpp"
+	"soundHandler.hpp"
+	"musicHandler.hpp"
+	"bddInternalHandler.hpp"
+	"mapHandler.hpp"
+	"animation.hpp"
+	"board.hpp"
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<iostream>
+
+1324746902 c:\users\sonate\desktop\code\nongi-omega-client-core-78f291a\soundhandler.hpp
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<vector>
+	<string>
+	<iostream>
+
+1324746902 source:c:\users\sonate\desktop\code\nongi-omega-client-core-78f291a\soundhandler.cpp
+	"soundHandler.hpp"
+	"bddInternalHandler.hpp"
+	<SFML/System.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Graphics.hpp>
+	<iostream>
+
+1349850707 source:c:\users\sonate\desktop\code\nongi-omega-client-core-78f291a\spritehandler.cpp
+	"spriteHandler.hpp"
+	"bddInternalHandler.hpp"
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+	<iostream>
+
+1324746902 source:c:\users\sonate\desktop\code\nongi-omega-client-core-78f291a\sqlite3.c
+	"config.h"
+	<stdint.h>
+	<inttypes.h>
+	<tcl.h>
+	<stdarg.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<stddef.h>
+	<windows.h>
+	<os2safe.h>
+	<os2.h>
+	<uconv.h>
+	<ctype.h>
+	<time.h>
+	<pthread.h>
+	<math.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<fcntl.h>
+	<unistd.h>
+	<sys/time.h>
+	<errno.h>
+	<sys/mman.h>
+	<sys/ioctl.h>
+	<semaphore.h>
+	<limits.h>
+	<sys/file.h>
+	<sys/param.h>
+	<sys/mount.h>
+	<dlfcn.h>
+	<winbase.h>
+	<sys/cygwin.h>
+	"sqlite3rtree.h"
+	<unicode/utypes.h>
+	<unicode/uregex.h>
+	<unicode/ustring.h>
+	<unicode/ucol.h>
+	<unicode/ubrk.h>
+	<unicode/utf16.h>
+
+1350910533 source:c:\users\sonate\desktop\code\nongi-omega-client-core-78f291a\board.cpp
+	"board.hpp"
+	"spriteHandler.hpp"
+	"boardForm.hpp"
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+	<iostream>
+	"elementMap.hpp"
+	"bddInternalHandler.hpp"
+	<stdlib.h>
+	<time.h>
+
+1350910378 c:\users\sonate\desktop\code\nongi-omega-client-core-78f291a\board.hpp
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+	<iostream>
+	<vector>
+
+1343640423 c:\users\sonate\desktop\code\nongi-omega-client-core-78f291a\boardform.hpp
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+	<iostream>
+
+1343633916 source:c:\users\sonate\desktop\code\nongi-omega-client-core-78f291a\boardform.cpp
+	"boardForm.hpp"
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+	<iostream>
+
+1350650061 source:c:\users\sonate\desktop\code\nongi-omega-client-core-78f291a\pokemon.cpp
+
+1347862870 source:c:\users\sonate\documents\github\omega-client-core\gestionnairedb.cpp
+	"GestionnaireDB.h"
+	"sqlite3.h"
+	<iostream>
+	<fstream>
+	<string>
+	<cstring>
+	<time.h>
+
+1344434238 c:\users\sonate\documents\github\omega-client-core\gestionnairedb.h
+	<string>
+	<vector>
+	"sqlite3.h"
+
+1324746902 c:\users\sonate\documents\github\omega-client-core\sqlite3.h
+	<stdarg.h>
+
+1343655095 source:c:\users\sonate\documents\github\omega-client-core\animation.cpp
+	"animation.hpp"
+	"spriteHandler.hpp"
+	"bddInternalHandler.hpp"
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<iostream>
+
+1343642413 c:\users\sonate\documents\github\omega-client-core\animation.hpp
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+	<iostream>
+
+1349850761 c:\users\sonate\documents\github\omega-client-core\spritehandler.hpp
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+	<vector>
+	<string>
+	<iostream>
+
+1348465684 c:\users\sonate\documents\github\omega-client-core\bddinternalhandler.hpp
+	"GestionnaireDB.h"
+	<iostream>
+	<map>
+
+1350647454 source:c:\users\sonate\documents\github\omega-client-core\bddinternalhandler.cpp
+	"bddInternalHandler.hpp"
+	"GestionnaireDB.h"
+	<iostream>
+	<sstream>
+	<map>
+
+1350910533 source:c:\users\sonate\documents\github\omega-client-core\board.cpp
+	"board.hpp"
+	"spriteHandler.hpp"
+	"boardForm.hpp"
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+	<iostream>
+	"elementMap.hpp"
+	"bddInternalHandler.hpp"
+	<stdlib.h>
+	<time.h>
+
+1350910378 c:\users\sonate\documents\github\omega-client-core\board.hpp
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+	<iostream>
+	<vector>
+
+1343640423 c:\users\sonate\documents\github\omega-client-core\boardform.hpp
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+	<iostream>
+
+1349850135 c:\users\sonate\documents\github\omega-client-core\elementmap.hpp
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+	<iostream>
+	<vector>
+
+1343633916 source:c:\users\sonate\documents\github\omega-client-core\boardform.cpp
+	"boardForm.hpp"
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+	<iostream>
+
+1350650290 source:c:\users\sonate\documents\github\omega-client-core\elementmap.cpp
+	"elementMap.hpp"
+	"spriteHandler.hpp"
+	"bddInternalHandler.hpp"
+	<iostream>
+	<sstream>
+	<stdlib.h>
+	<time.h>
+
+1324746902 source:c:\users\sonate\documents\github\omega-client-core\main.cpp
+	<iostream>
+	"noyau.hpp"
+
+1324746902 c:\users\sonate\documents\github\omega-client-core\noyau.hpp
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+	<iostream>
+
+1324746902 source:c:\users\sonate\documents\github\omega-client-core\maphandler.cpp
+	"mapHandler.hpp"
+	"spriteHandler.hpp"
+
+1324746902 c:\users\sonate\documents\github\omega-client-core\maphandler.hpp
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+	"mapSyst.hpp"
+	<iostream>
+
+1350451850 c:\users\sonate\documents\github\omega-client-core\mapsyst.hpp
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+	"elementMap.hpp"
+	<iostream>
+	<vector>
+
+1350451855 source:c:\users\sonate\documents\github\omega-client-core\mapsyst.cpp
+	"mapSyst.hpp"
+	"bddInternalHandler.hpp"
+	<vector>
+	<iostream>
+
+1342269423 source:c:\users\sonate\documents\github\omega-client-core\musichandler.cpp
+	"musicHandler.hpp"
+	"bddInternalHandler.hpp"
+	<SFML/System.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Graphics.hpp>
+	<iostream>
+
+1324746902 c:\users\sonate\documents\github\omega-client-core\musichandler.hpp
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<iostream>
+
+1350721237 source:c:\users\sonate\documents\github\omega-client-core\noyau.cpp
+	"noyau.hpp"
+	"spriteHandler.hpp"
+	"soundHandler.hpp"
+	"musicHandler.hpp"
+	"bddInternalHandler.hpp"
+	"mapHandler.hpp"
+	"animation.hpp"
+	"board.hpp"
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<iostream>
+
+1324746902 c:\users\sonate\documents\github\omega-client-core\soundhandler.hpp
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<vector>
+	<string>
+	<iostream>
+
+1350650061 source:c:\users\sonate\documents\github\omega-client-core\pokemon.cpp
+
+1324746902 source:c:\users\sonate\documents\github\omega-client-core\soundhandler.cpp
+	"soundHandler.hpp"
+	"bddInternalHandler.hpp"
+	<SFML/System.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Graphics.hpp>
+	<iostream>
+
+1349850707 source:c:\users\sonate\documents\github\omega-client-core\spritehandler.cpp
+	"spriteHandler.hpp"
+	"bddInternalHandler.hpp"
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+	<iostream>
+
+1324746902 source:c:\users\sonate\documents\github\omega-client-core\sqlite3.c
+	"config.h"
+	<stdint.h>
+	<inttypes.h>
+	<tcl.h>
+	<stdarg.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<stddef.h>
+	<windows.h>
+	<os2safe.h>
+	<os2.h>
+	<uconv.h>
+	<ctype.h>
+	<time.h>
+	<pthread.h>
+	<math.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<fcntl.h>
+	<unistd.h>
+	<sys/time.h>
+	<errno.h>
+	<sys/mman.h>
+	<sys/ioctl.h>
+	<semaphore.h>
+	<limits.h>
+	<sys/file.h>
+	<sys/param.h>
+	<sys/mount.h>
+	<dlfcn.h>
+	<winbase.h>
+	<sys/cygwin.h>
+	"sqlite3rtree.h"
+	<unicode/utypes.h>
+	<unicode/uregex.h>
+	<unicode/ustring.h>
+	<unicode/ucol.h>
+	<unicode/ubrk.h>
+	<unicode/utf16.h>
+

@@ -18,6 +18,8 @@ class GestionnaireDB
 	    vector<vector<string> > query(string request);
 	    void close();
 
+        time_t timeDate;
+
 	private:
 	    sqlite3 *database;
 };

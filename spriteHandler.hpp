@@ -16,7 +16,8 @@ class spriteHandler
         spriteHandler();
         ~spriteHandler();
 
-        map<string, Image*> stockImages;
+        map<string, Image*> stockImagesWName;
+        map<int, Image*> stockImages;
 
         /*
         //Ensemble de map pour permettre des recherches plus rapides et spécifique au région
@@ -24,9 +25,12 @@ class spriteHandler
         map<string, Image*> stockStatique;
         */
 
-        bool SearchImage(const string &ImageLink, Image* &ImgTemp);
-        Image *CreateImage(const string &ImageLink);
+        bool SearchImage(const int &ImageLink, Image* &ImgTemp);
+        bool SearchImageWName(const string &ImageLink, Image* &ImgTemp);
+        Image *CreateImage(const int &ImageLink);
+        Image *CreateImageWName(const string &ImageLink);
         void loadSprites();
+        void loadSpritesWName();
 
 
     public:
@@ -44,9 +48,13 @@ class spriteHandler
 
 
         Image *getImage(const string &ImageLink);
+        Image *getImage(const int &ImageLink);
 
         void DeleteImage(Image &Img);
-        void DeleteImage(const string& ImageLink);
+        void DeleteImage(const int& ImageLink);
+
+        void DeleteImageWName(Image &Img);
+        void DeleteImageWName(const string& ImageLink);
 
 };
 

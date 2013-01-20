@@ -10,7 +10,7 @@
 				<Option output="bin\Debug\Omega 0" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj\Debug\" />
 				<Option type="1" />
-				<Option compiler="gnu_gcc_compiler_last_mingw_version" />
+				<Option compiler="gnu_gcc_compiler_44_sfml" />
 				<Compiler>
 					<Add option="-g" />
 				</Compiler>
@@ -44,6 +44,10 @@
 		<Unit filename="animation.hpp" />
 		<Unit filename="bddInternalHandler.cpp" />
 		<Unit filename="bddInternalHandler.hpp" />
+		<Unit filename="board.cpp" />
+		<Unit filename="board.hpp" />
+		<Unit filename="boardForm.cpp" />
+		<Unit filename="boardForm.hpp" />
 		<Unit filename="elementMap.cpp" />
 		<Unit filename="elementMap.hpp" />
 		<Unit filename="main.cpp" />
@@ -55,6 +59,8 @@
 		<Unit filename="musicHandler.hpp" />
 		<Unit filename="noyau.cpp" />
 		<Unit filename="noyau.hpp" />
+		<Unit filename="pokemon.cpp" />
+		<Unit filename="pokemon.hpp" />
 		<Unit filename="soundHandler.cpp" />
 		<Unit filename="soundHandler.hpp" />
 		<Unit filename="spriteHandler.cpp" />

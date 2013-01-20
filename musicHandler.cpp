@@ -90,7 +90,7 @@ Music *musicHandler::getMusic(const string &MusicLink)
 {
     Music *MusicTemp;
 
-    //Si le son demandée n'existe pas déjà, on la créée
+    //Si le morceau de musique demandée n'existe pas déjà, on le créée
     if(!SearchMusic(MusicLink, MusicTemp))
     {
         MusicTemp = CreateMusic(MusicLink);
@@ -104,7 +104,7 @@ void musicHandler::DeleteMusic(Music &Musique)
 {
     map<string, Music*>::iterator it;
 
-    //On cherche le son demandée
+    //On cherche lle morceau de musique demandée
     for(it = stockMusics.begin(); it != stockMusics.end(); it++)
     {
     //Si on le trouve, on le détruit et on le retire

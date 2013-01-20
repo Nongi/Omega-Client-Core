@@ -8,6 +8,7 @@
 class animation
 {
     private:
+        std::string idAnimation;
         int coordX,coordY;
         float vitesse;
 

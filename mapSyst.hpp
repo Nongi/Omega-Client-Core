@@ -22,14 +22,17 @@ class mapSyst
 
         int largeur,longueur;
 
-        int getLargeur(string mapPrimaire);
-        int getLongueur(string mapPrimaire);
 
     public :
         mapSyst();
         mapSyst(string idMap);
+        mapSyst(int idMap);
         ~mapSyst();
 
         void initPrimaire(string idMap);
+        void initPrimaire(int idMap);
         void afficherAll(RenderWindow &fenAffichage);
+
+        int getLargeur();
+        int getLongueur();
 };

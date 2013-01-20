@@ -5,6 +5,7 @@
 #include "bddInternalHandler.hpp"
 
 #include <iostream>
+#include <sstream>
 #include <stdlib.h>
 #include <time.h>
 
@@ -28,10 +29,30 @@ elementMap::elementMap(string idElement)
     spriteEltPrim.SetImage(*instSpriteHandler->getImage(idElement));
     spriteEltPrim.SetPosition(coordX, coordY);
     spriteEltPrim.SetScale(2, 2);
-
 }
 
 elementMap::elementMap(string idElement,int coordXIn,int coordYIn)
+{
+    //cout<<"Creation de l'elementMap "<<idElement<<" coord("<<coordX<<";"<<coordY<<")"<<endl;
+    coordX=coordXIn;
+    coordY=coordYIn;
+    istringstream iss( idElement );
+    int idEl;
+    iss >> idEl;
+
+    spriteHandler *instSpriteHandler = spriteHandler::getInstance();
+
+    bddInternalHandler *instBddInternalHandler = bddInternalHandler::getInstance();
+    //vector<string> listeSpri=instBddInternalHandler->getListeSpritesNameElem(idEl);
+    vector<int> listeSpriId=instBddInternalHandler->getListeSpritesElem(idEl);
+
+    //spriteEltPrim.SetImage(*instSpriteHandler->getImage(listeSpri.at(rand()%listeSpri.size())));
+    spriteEltPrim.SetImage(*instSpriteHandler->getImage(listeSpriId.at(rand()%listeSpriId.size())));
+    spriteEltPrim.SetPosition(coordX, coordY);
+    spriteEltPrim.SetScale(2, 2);
+}
+
+elementMap::elementMap(int idElement,int coordXIn,int coordYIn)
 {
     //cout<<"Creation de l'elementMap "<<idElement<<" coord("<<coordX<<";"<<coordY<<")"<<endl;
     coordX=coordXIn;
@@ -40,12 +61,12 @@ elementMap::elementMap(string idElement,int coordXIn,int coordYIn)
     spriteHandler *instSpriteHandler = spriteHandler::getInstance();
 
     bddInternalHandler *instBddInternalHandler = bddInternalHandler::getInstance();
-    vector<string> listeSpri=instBddInternalHandler->getListeSpritesElem(idElement);
+    //vector<string> listeSpri=instBddInternalHandler->getListeSpritesNameElem(idElement);
+    vector<int> listeSpriId=instBddInternalHandler->getListeSpritesElem(idElement);
 
-    spriteEltPrim.SetImage(*instSpriteHandler->getImage(listeSpri.at(rand()%listeSpri.size())));
+    spriteEltPrim.SetImage(*instSpriteHandler->getImage(listeSpriId.at(rand()%listeSpriId.size())));
     spriteEltPrim.SetPosition(coordX, coordY);
     spriteEltPrim.SetScale(2, 2);
-
 }
 
 elementMap::~elementMap()
