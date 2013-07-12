@@ -17,6 +17,7 @@ class mapSyst
     private :
 
         vector<elementMap*> couchePrimaire;
+        vector<vector<elementMap*> > couchePrimaire2;
         vector<string> coucheStatique;
         vector<string> coucheDynamique;
 
@@ -30,6 +31,7 @@ class mapSyst
         ~mapSyst();
 
         void initPrimaire(string idMap);
+        void initPrimaire2(string idMap);
         void initPrimaire(int idMap);
         void afficherAll(RenderWindow &fenAffichage);
 

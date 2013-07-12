@@ -18,41 +18,20 @@ animation::animation()
 
 animation::animation(string idAnim)
 {
-    idAnimation=idAnim;
-    spriteHandler *instSpriteHandler = spriteHandler::getInstance();
-    bddInternalHandler *instBddInternalHandler = bddInternalHandler::getInstance();
+    initAnimation(idAnim);
+}
 
-    setLoopEnable();
-    setPosition(50,50);
-    setScale(2,2);
-
-    /*
-    spriteBase="scientifiqueFront";
-    listeNameSpritesAnim.push_back("scientifiqueFront1");
-    listeNameSpritesAnim.push_back("scientifiqueFront2");
-    */
-
-    idSpriteCourant=0;
-
-
-    vitesse=instBddInternalHandler->getVitesseAnimation(idAnim);
-    map<int,string> listeAnim=instBddInternalHandler->getAnimation(idAnim);
-    map<int, string>::iterator it;
-
-    for(it = listeAnim.begin(); it!= listeAnim.end() ; ++it)
-    {
-        cout << " test : "<<it->first<<endl;
-        if(it->first==0)
-            spriteBase=it->second;
-        else
-            listeNameSpritesAnim.push_back(it->second);
-    }
-
-    cout<<"Creation de l'animation "+idAnim<<endl;
+animation::animation(string idAnim, bool loopIn)
+{
+    if(loopIn)
+        setLoopEnable();
+    else
+        setLoopDisable();
+    initAnimation(idAnim);
 }
 
 
-//création d'animation avec une liste de sprite
+//création d'animation avec une liste de nom de sprite
 animation::animation(std::vector<std::string> listeSpriteIn,float vitIn)
 {
     spriteHandler *instSpriteHandler = spriteHandler::getInstance();
@@ -70,6 +49,45 @@ animation::animation(std::vector<std::string> listeSpriteIn,float vitIn)
     cout<<"Creation de l'animation"<<endl;
 }
 
+void animation::initAnimation(string idAnim)
+{
+    idAnimation=idAnim;
+    spriteHandler *instSpriteHandler = spriteHandler::getInstance();
+    bddInternalHandler *instBddInternalHandler = bddInternalHandler::getInstance();
+
+    setLoopEnable();
+    setPosition(50,50);
+    setScale(2,2);
+
+    idSpriteCourant=0;
+
+    vitesse=instBddInternalHandler->getVitesseAnimation(idAnim);
+    map<int,string> listeAnim=instBddInternalHandler->getAnimation(idAnim);
+    map<int,string>::iterator it;
+
+    for(it = listeAnim.begin(); it!= listeAnim.end() ; ++it)
+    {
+        if(it->first==0)
+            spriteBase=it->second;
+        else
+            listeNameSpritesAnim.push_back(it->second);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 void animation::move(int coordXIn,int coordYIn)
 {
     spriteCourant.Move(coordXIn,coordYIn);
@@ -77,7 +95,6 @@ void animation::move(int coordXIn,int coordYIn)
 
 void animation::setPosition(int coordXIn,int coordYIn)
 {
-
     spriteCourant.SetPosition(coordXIn,coordYIn);
 }
 
@@ -87,13 +104,11 @@ void animation::setScale(float xIn, float yIn){
 
 void animation::play()
 {
-    cout<<"Démarrage de l'animation :"+idAnimation<<endl;
     run=true;
 }
 
 void animation::stop()
 {
-    cout<<"Arret de l'animation :"+idAnimation<<endl;
     run=false;
 }
 

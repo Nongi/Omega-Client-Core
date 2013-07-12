@@ -12,63 +12,6 @@ bddInternalHandler *bddInternalHandler::singleton = NULL;
 bddInternalHandler::bddInternalHandler()
 {
     db = new GestionnaireDB("internal.db");
-
-    /*
-
-        A surtout ne pas oter les parenthese sans changer le nom de la db plz
-        db->query("CREATE TABLE Sounds (idSound char(50), PRIMARY KEY(idSound));");
-        db->query("INSERT INTO Sounds VALUES('activated');");
-        db->query("CREATE TABLE Musics (idMusic char(50), PRIMARY KEY(idMusic));");
-        db->query("INSERT INTO Musics VALUES('OverMore');");
-    */
-
-        //---------------------------------------------------------------------------------------
-
-    /*db->query("CREATE TABLE Sounds (idSound INTEGER, nameSound char(50), PRIMARY KEY(idSound));");
-
-        db->query("INSERT INTO Sounds VALUES(0,'activated');");
-
-        //---------------------------------------------------------------------------------------
-
-        db->query("CREATE TABLE Musics (idMusic INTEGER, nameMusic char(50), PRIMARY KEY(idMusic));");
-
-        db->query("INSERT INTO Musics VALUES(0,'OverMore');");
-
-        //---------------------------------------------------------------------------------------
-
-        db->query("CREATE TABLE Sprites (idSprite INTEGER, nomSprite CHAR(50), tailleX INTEGER, tailleY INTEGER, coordX INTEGER, coordY INTEGER, PRIMARY KEY(idSprite));");
-
-        db->query("INSERT INTO Sprites VALUES(0,'herbe1',16,16,0,0);");
-
-        db->query("INSERT INTO Sprites VALUES(1,'chemin1',16,16,0,0);");
-
-        db->query("INSERT INTO Sprites VALUES(2,'chemin2',16,16,0,0);");
-
-        db->query("INSERT INTO Sprites VALUES(100,'scientifiqueFront',18,24,0,0);");
-
-        db->query("INSERT INTO Sprites VALUES(101,'scientifiqueBack',18,24,0,0);");
-
-        db->query("INSERT INTO Sprites VALUES(102,'scientifiqueRight',18,24,0,0);");
-
-        db->query("INSERT INTO Sprites VALUES(103,'scientifiqueLeft',18,24,0,0);");
-
-        //---------------------------------------------------------------------------------------
-
-        db->query("CREATE TABLE Map (idMap INTEGER, largeur INTEGER, longueur INTEGER, couchePrimaire CHAR, coucheStatique CHAR, PRIMARY KEY(idMap));");
-
-        db->query("INSERT INTO Map VALUES(5000000,30,30,16,'12,0,1,1,1,2,28,0,1,1,1,2,28,0,1,1,1,2,28,0,1,1,1,2,28,0,1,1,1,2,28,0,1,1,1,2,28,0,1,1,1,2,28,0,1,1,1,2,28,0,1,1,1,2,28,0,1,1,1,2,28,0,1,1,1,2,28,0,1,1,1,2,28,0,1,1,1,2,28,0,1,1,1,2,28,0,1,1,1,2,28,0,1,1,1,2,28,0,1,1,1,2,28,0,1,1,1,2,28,0,1,1,1,2,28,0,1,1,1,2,28,0,1,1,1,2,28,0,1,1,1,2,28,0,1,1,1,2,28,0,1,1,1,2,28,0,1,1,1,2,28,0,1,1,1,2,28,0,1,1,1,2,28,0,1,1,1,2,28,0,1,1,1,2,28,0,1,1,1,2,16,0','0');");
-
-    */
-
-
-    //db->query("CREATE TABLE ElementsPrim (idElemPrim INTEGER, codePassage INTEGER, PRIMARY KEY(idElemPrim));");
-    //db->query("CREATE TABLE LinkSprite (idElemPrim INTEGER,idSprite INTEGER, PRIMARY KEY(idElemPrim,idSprite));");
-
-
-    //db->query("CREATE TABLE Animations (idAnim INTEGER, speed INTEGER, PRIMARY KEY(idAnim));");
-    //db->query("CREATE TABLE LinkAnimSprite (idAnim INTEGER,idSprite INTEGER,ordre INTEGER, PRIMARY KEY(idAnim,idSprite));");
-
-
 }
 
 bddInternalHandler::~bddInternalHandler()
@@ -114,16 +57,6 @@ vector<string> bddInternalHandler::getListeMusics()
 
 
 //---------------------------------SPRITES-------------------------------------------
-
-/*
-    Pour récuper tout les sprites possible de l'élément herbe (idelem = 1)
-    vector<string> resultEnd;
-    resultEnd=instBddInternalHandler->getListeSpritesElem("1");
-    for(vector<string>::iterator i = resultEnd.begin(); i != resultEnd.end();++i)
-    {
-        cout<<*i<<endl;
-    }
-*/
 
 
 string bddInternalHandler::getSpriteName(string idSpriteIn)

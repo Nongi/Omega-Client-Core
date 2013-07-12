@@ -7,14 +7,14 @@
 	<File name="GestionnaireDB.h" open="0" top="0" tabpos="9">
 		<Cursor position="115" topLine="0" />
 	</File>
-	<File name="animation.cpp" open="0" top="0" tabpos="3">
-		<Cursor position="942" topLine="32" />
+	<File name="animation.cpp" open="0" top="0" tabpos="2">
+		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="animation.hpp" open="0" top="0" tabpos="4">
-		<Cursor position="123" topLine="0" />
+	<File name="animation.hpp" open="0" top="0" tabpos="3">
+		<Cursor position="344" topLine="15" />
 	</File>
 	<File name="bddInternalHandler.cpp" open="0" top="0" tabpos="1">
-		<Cursor position="12485" topLine="460" />
+		<Cursor position="117" topLine="0" />
 	</File>
 	<File name="bddInternalHandler.hpp" open="0" top="0" tabpos="3">
 		<Cursor position="152" topLine="36" />
@@ -31,26 +31,32 @@
 	<File name="boardForm.hpp" open="0" top="0" tabpos="0">
 		<Cursor position="131" topLine="0" />
 	</File>
+	<File name="combat.cpp" open="0" top="0" tabpos="6">
+		<Cursor position="22" topLine="0" />
+	</File>
+	<File name="combat.hpp" open="0" top="0" tabpos="7">
+		<Cursor position="94" topLine="0" />
+	</File>
 	<File name="elementMap.cpp" open="0" top="0" tabpos="5">
 		<Cursor position="2280" topLine="59" />
 	</File>
 	<File name="elementMap.hpp" open="0" top="0" tabpos="6">
 		<Cursor position="240" topLine="8" />
 	</File>
-	<File name="main.cpp" open="0" top="0" tabpos="5">
+	<File name="main.cpp" open="0" top="0" tabpos="4">
 		<Cursor position="157" topLine="0" />
 	</File>
 	<File name="mapHandler.cpp" open="0" top="0" tabpos="7">
-		<Cursor position="278" topLine="0" />
+		<Cursor position="173" topLine="0" />
 	</File>
 	<File name="mapHandler.hpp" open="0" top="0" tabpos="3">
 		<Cursor position="281" topLine="8" />
 	</File>
-	<File name="mapSyst.cpp" open="0" top="0" tabpos="7">
-		<Cursor position="1959" topLine="68" />
+	<File name="mapSyst.cpp" open="1" top="1" tabpos="1">
+		<Cursor position="2495" topLine="74" />
 	</File>
-	<File name="mapSyst.hpp" open="0" top="0" tabpos="8">
-		<Cursor position="686" topLine="12" />
+	<File name="mapSyst.hpp" open="1" top="0" tabpos="2">
+		<Cursor position="326" topLine="16" />
 	</File>
 	<File name="musicHandler.cpp" open="0" top="0" tabpos="4">
 		<Cursor position="165" topLine="0" />
@@ -58,8 +64,8 @@
 	<File name="musicHandler.hpp" open="0" top="0" tabpos="3">
 		<Cursor position="482" topLine="5" />
 	</File>
-	<File name="noyau.cpp" open="0" top="0" tabpos="4">
-		<Cursor position="1917" topLine="60" />
+	<File name="noyau.cpp" open="0" top="0" tabpos="5">
+		<Cursor position="1909" topLine="51" />
 	</File>
 	<File name="noyau.hpp" open="0" top="0" tabpos="2">
 		<Cursor position="348" topLine="0" />
@@ -74,10 +80,10 @@
 		<Cursor position="229" topLine="6" />
 	</File>
 	<File name="spriteHandler.cpp" open="0" top="0" tabpos="5">
-		<Cursor position="6531" topLine="173" />
+		<Cursor position="390" topLine="0" />
 	</File>
 	<File name="spriteHandler.hpp" open="0" top="0" tabpos="6">
-		<Cursor position="155" topLine="9" />
+		<Cursor position="1469" topLine="38" />
 	</File>
 	<File name="sqlite3.c" open="0" top="0" tabpos="0">
 		<Cursor position="410984" topLine="123286" />

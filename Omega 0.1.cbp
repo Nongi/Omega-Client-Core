@@ -48,6 +48,8 @@
 		<Unit filename="board.hpp" />
 		<Unit filename="boardForm.cpp" />
 		<Unit filename="boardForm.hpp" />
+		<Unit filename="combat.cpp" />
+		<Unit filename="combat.hpp" />
 		<Unit filename="elementMap.cpp" />
 		<Unit filename="elementMap.hpp" />
 		<Unit filename="main.cpp" />

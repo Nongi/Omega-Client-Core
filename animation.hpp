@@ -29,6 +29,9 @@ class animation
         animation();
         animation(std::vector<std::string> listeSpriteIn,float vitIn);
         animation(std::string idAnim);
+        animation(std::string idAnim, bool loopIn);
+
+        void initAnimation(std::string idAnim);
 
         void move(int coordXIn,int coordYIn);
         void setPosition(int coordXIn,int coordYIn);

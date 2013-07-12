@@ -69,7 +69,7 @@ void noyau::run()
     spriteIn.SetScale(2, 2);
     */
 
-    animation firstAnim = animation("1");
+    animation firstAnim = animation("1",true);
     //firstAnim.play();
     firstAnim.stop();
 
